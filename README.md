@@ -7,9 +7,9 @@ A link to orignal data, all the data transformation, cleanup and description of 
 
 
 
-Pre-requisite
+Pre-requisite for the "run_analysis.R" script
 ---------------------------
-To run the run_analysis.R script, R statistical package (http://www.r-project.org) must be installed and optionally, Rstudio (https://www.rstudio.com/ide/download/desktop) should also be installed. 
+To run the "run_analysis.R" script, R statistical package (http://www.r-project.org) must be installed and optionally, Rstudio (https://www.rstudio.com/ide/download/desktop) should also be installed. 
 * Down load the date from the following URL:
 (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 * Unzip the file and extract the data to the “UCI HAR Dataset” folder.
@@ -27,8 +27,8 @@ Component of the script
 
 1. Reading “test” and “train” data files and merging them:
 “CombinedDataFrame” function will read and merge the files in “test” and “train” folders. It takes two arguments: 
-    1. folder that contain the files 
-    2. pattern of the files need to be merged
+    * folder that contain the files 
+    * pattern of the files need to be merged
 
   Prior to running the function, you need to run following two commands (in this case, test data has
   been used as an example.). 
