@@ -32,16 +32,6 @@ test_combined.df <- setnames(complete_set, mynames) # rename the columns
 head(test_combined.df)
 
 
-#train.dfs <- lapply(file.path(train.dir, train_files), read.table)
-#train_combined.df <- data.table(cbind.data.frame(train.dfs[1], train.dfs[3], train.dfs[2]))
-#head(train_combined.df)
-#train_combined.df <- setnames(train_combined.df, mynames)
-#names(train_combined.df) <- NULL
-#complete_set <- rbind(test_combined.df, train_combined.df)
-
-#mean_std <- c("mean()", "std()")
-
-#mynames <- features(features$V2))
 ###############extracting mean and std####################################
 matches_mean <- features[grep("mean()", (as.character(features$V2)), fixed =TRUE), ] #get mean variables
 angel <- features[grep("Mean", (as.character(features$V2)), fixed =TRUE),] # get mean of angle variables

@@ -14,7 +14,7 @@ To run the run_analysis.R script, R statistical package (http://www.r-project.or
 * Set the working directory to “UCI HAR Dataset”, using the following command:
 
 ```{r}
-setwd(“path-to-directory/UCI HAR Dataset/”)
+setwd(“path-to-directory/UCI HAR Dataset”)
 ```
 
 * The script requires three R packages: "stringr"", "reshape2"" and "data.table". These packages can be installed using install.packages() function in R or using "Install Packages" icon in Rstudio.
