@@ -25,7 +25,7 @@ Component of the script
 -----------------------------------
 "run_analysis.R" has six main component and each section is marked with comments inside the script (in addition all the lines of the script is annontated with comments to give explanations):
 
-1. Reading “test” and “train” data files and merging them:
+* Reading “test” and “train” data files and merging them:
 “CombinedDataFrame” function will read and merge the files in “test” and “train” folders. It takes two arguments: folder that contain the files  and pattern of the files need to be merged.
 
   	Prior to running the function, you need to run following two commands (in this case, test data has
@@ -35,19 +35,19 @@ Component of the script
 test.dir <- "test" # this the directory containing test data
 test.files <- list.files(test.dir, pattern="*_test.txt") # get list of files that contains "*_test.txt" in the file name 
 ```	
-2. Labeling the variable names:
+* Labeling the variable names:
 This part of the code will read "features.txt" and set the column names to the variable names that are found in the file. It will also add "subject" and "activity"  labels. 
 
-3. Extracting mean and std:
+* Extracting mean and std:
 This part of the script will extract the variable on mean and standard deviation. 
 
-4. Label the activities:
+* Label the activities:
 This section will read "activity_labels.txt" file and assign English names to the numerical values of the merged dataset. 
 
-5. Function to make better column lables:
+* Function to make better column lables:
 “MakeBetterNames” function will take the names present in the merged dataset and change column names as described in the CodeBook.md and return a vector containing names.  This vector will be used to rename the merged data. 
 
-6. Getting average of each variable for each activity and each subject:
+* Getting average of each variable for each activity and each subject:
 This will average the numerical variable for each activity and subject pair.  The resulting file will be written to "second_tidy.txt". The variables and data transformatio are described in CodeBook.md.
 
 Running the script: 
