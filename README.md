@@ -36,7 +36,7 @@ Component of the script
 test.dir <- "test" # this the directory containing test data
 test.files <- list.files(test.dir, pattern="*_test.txt") # get list of files that contains "*_test.txt" in the file name 
 ```
-This should be run for both test and train data, separately.Then the two files will be merged. 
+  This should be run for both test and train data, separately.Then the two files will be merged. 
 
 2. Labeling the variable names:
 This part of the code will read "features.txt" and set the column names to the variable names that are found in the file. It will also add "subject" and "activity"  labels. 
