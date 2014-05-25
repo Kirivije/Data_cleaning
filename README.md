@@ -26,9 +26,7 @@ Component of the script
 "run_analysis.R" has six main component and each section is marked with comments inside the script (in addition all the lines of the script is annontated with comments to give explanations):
 
 1. Reading “test” and “train” data files and merging them:
-“CombinedDataFrame” function will read and merge the files in “test” and “train” folders. It takes two arguments: 
-    * folder that contain the files 
-    * pattern of the files need to be merged
+“CombinedDataFrame” function will read and merge the files in “test” and “train” folders. It takes two arguments: folder that contain the files  and pattern of the files need to be merged.
 
   Prior to running the function, you need to run following two commands (in this case, test data has
   been used as an example.). 
@@ -36,7 +34,7 @@ Component of the script
 test.dir <- "test" # this the directory containing test data
 test.files <- list.files(test.dir, pattern="*_test.txt") # get list of files that contains "*_test.txt" in the file name 
 ```
-  This should be run for both test and train data, separately.Then the two files will be merged. 
+   This should be run for both test and train data, separately.Then the two files will be merged. 
 
 2. Labeling the variable names:
 This part of the code will read "features.txt" and set the column names to the variable names that are found in the file. It will also add "subject" and "activity"  labels. 
