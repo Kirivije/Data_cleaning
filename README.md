@@ -1,7 +1,9 @@
 R Script to Analyze Human Activity Recognition Using Smartphones Data Set
 ========================================================
 
-A link to orignal data, all the data transformation, cleanup and description of varaible names can be found in CodeBook.md. 
+CodeBook.md
+---------------------
+A link to orignal data, all the data transformation, cleanup and description of varaible names can be found in CodeBook.md. The data cleaning and transformation described in the CodeBook.md can be achieved by running the "run_analysis.R" script". 
 
 
 
@@ -28,8 +30,8 @@ Component of the script
     1. folder that contain the files 
     2. pattern of the files need to be merged
 
- Prior to running the function, you need to run following two commands (in this case, test data has
- been used as an example.). 
+  Prior to running the function, you need to run following two commands (in this case, test data has
+  been used as an example.). 
 ```{r}
 test.dir <- "test" # this the directory containing test data
 test.files <- list.files(test.dir, pattern="*_test.txt") # get list of files that contains "*_test.txt" in the file name 
